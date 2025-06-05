@@ -1,4 +1,4 @@
-import React from "react";
+
 import LandingPages from "./component/LandingPages";
 
 function App() {

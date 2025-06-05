@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useState } from "react";
 import Internet from "../assets/Frame.png";
 import Pounds from "../assets/£.png";

@@ -1,4 +1,3 @@
-import React from 'react'
 import Amazing from "../assets/Amazing views.png"
 import Cabins from "../assets/Cabins.png"
 import beachFront from "../assets/Beachfronts.png"

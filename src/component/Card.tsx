@@ -8,7 +8,7 @@ type CardProps = {
   price: string;
 
 };
-function Card ({image, location, rating, title, date, price }= CardProps) {
+function Card ({image, location, rating, title, date, price }: CardProps) {
   return (
     <div className="px-4 max-w-xs flex-shrink-0">
       <div className="rounded-xl shadow-sm">
