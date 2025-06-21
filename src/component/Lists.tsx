@@ -21,7 +21,7 @@ const Listing = [
   {
     image: image1,
     location: "Half Moon Bay, California, US",
-    rating: "5.0",
+    rating: 5.0, 
     title: "Beach and ocean views",
     date: "22–27 Oct · Individual Host",
     price: "£1,634 total",
@@ -29,144 +29,137 @@ const Listing = [
   {
     image: image2,
     location: "Mountain View, California, US",
-    rating: "4.9",
+    rating: 4.9, 
     title: "Modern pool house",
     date: "1–5 Nov · Individual Host",
     price: "£1,200 total",
   },
-  
-  { image: image3, 
+
+  {
+    image: image3,
     location: "Mountain View, California, US",
-     rating: "4.9", title: "Modern pool house",
-      date: "1–5 Nov · Individual Host", 
-      price: "£1,200 total" },
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
 
   {
-     image: image4, 
-     location: "Mountain View, California, US",
-     
-     rating: "4.9", title: "Modern pool house",
-       date: "1–5 Nov · Individual Host",
-       price: "£1,200 total"
-     },
+    image: image4,
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
 
-  { 
+  {
     image: image5,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total" 
-
+    location: "Mountain View, California, US",
+    rating: 4.9,
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
   },
 
-  { 
+  {
     image: image6,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host", 
-    price: "£1,200 total" 
-
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
   },
 
-  { 
+  {
     image: image7,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host", 
-    price: "£1,200 total"
-
-   },
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
 
   {
-     image: image8,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house", 
-    date: "1–5 Nov · Individual Host", 
-    price: "£1,200 total"
+    image: image8,
+    location: "Mountain View, California, US",
+    rating: 4.9,
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
 
-   },
-
-  { 
+  {
     image: image9,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total"
-
-   },
-
-  { 
-    image: image10
-    , location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total"
-
-   },
-
-  { 
-    image: image11,
-     location: "Mountain View, California, US",
-     rating: "4.9", 
+    location: "Mountain View, California, US",
+    rating: 4.9, 
     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total"
-
-   },
-
-  { 
-    image: image12,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total" 
-
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
   },
 
   {
-     image: image13,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house", 
+    image: image10,
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total"
+    price: "£1,200 total",
+  },
 
-   },
+  {
+    image: image11,
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
 
-  { 
+  {
+    image: image12,
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
+
+  {
+    image: image13,
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
+
+  {
     image: image14,
-     location: "Mountain View, California, US",
-     rating: "4.9",
-     title: "Modern pool house", 
+    location: "Mountain View, California, US",
+    rating: 4.9, 
+    title: "Modern pool house",
     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total" 
-
+    price: "£1,200 total",
   },
 
-  { image: image15
-    , location: "Mountain View, California, US",
-     rating: "4.9", 
+  {
+    image: image15,
+    location: "Mountain View, California, US",
+    rating: 4.9, 
     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host", price: "£1,200 total" 
-
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
   },
 
-  { image: image16,
-     location: "Mountain View, California, US",
-     rating: "4.9", 
+  {
+    image: image16,
+    location: "Mountain View, California, US",
+    rating: 4.9,
     title: "Modern pool house",
-     date: "1–5 Nov · Individual Host",
-     price: "£1,200 total"
-
-   },
-
+    date: "1–5 Nov · Individual Host",
+    price: "£1,200 total",
+  },
 ];
 
 function Lists() {
@@ -178,38 +171,40 @@ function Lists() {
 
   return (
     <div>
-    <div className="w-full absolute top-50 pl-0 ">
-      <div className=" mx-auto  px-35">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {Listing.slice(0, visibleItems).map((item, index) => (
-            <Card
-              key={index}
-              image={item.image}
-              location={item.location}
-              rating={item.rating}
-              title={item.title}
-              date={item.date}
-              price={item.price}
-            />
-          ))}
-        </div>
+      <div className="w-full absolute top-50 pl-0 ">
+        <div className=" mx-auto px-35">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {Listing.slice(0, visibleItems).map((item, index) => (
+              <Card
+                key={index}
+                image={item.image}
+                location={item.location}
+                rating={item.rating}
+                title={item.title}
+                date={item.date}
+                price={item.price}
+              />
+            ))}
+          </div>
 
-        {visibleItems < Listing.length && (
-          <> <div className="flex justify-center mt-10 mb-10 font-semibold">
-            <p>Continue exploring amazing views</p>
-          </div>
-          <div className="flex justify-center mt-10 mb-10 ">
-            <button
-              onClick={handleShowMore}
-              className="px-6 py-2 bg-black text-white rounded-lg shadow-md hover:bg-gray-800 p-2 transition-colors duration-300"
-            >
-              Show More
-            </button>
-          </div>
-          </>
-        )}
+          {visibleItems < Listing.length && (
+            <>
+              {" "}
+              <div className="flex justify-center mt-10 mb-10 font-semibold">
+                <p>Continue exploring amazing views</p>
+              </div>
+              <div className="flex justify-center mt-10 mb-10 ">
+                <button
+                  onClick={handleShowMore}
+                  className="px-6 py-2 bg-black text-white rounded-lg shadow-md hover:bg-gray-800 p-2 transition-colors duration-300"
+                >
+                  Show More
+                </button>
+              </div>
+            </>
+          )}
+        </div>
       </div>
-    </div>
     </div>
   );
 }

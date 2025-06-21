@@ -2,17 +2,15 @@ import Google from "../assets/Google.png";
 import Apple from "../assets/Apple.png";
 import Email from "../assets/mail-01.png";
 import Facebook from "../assets/Vector.png";
-import { useState } from "react";
-import LgHomepage from "./LgHomepage";
+interface AirBnbHomeProps {
+  onContinue: () => void; 
+}
 
 
+const AirBnbHome = ({ onContinue }: AirBnbHomeProps) => {
+  
 
-const AirBnbHome = () => {
-  const [continueClicked, setContinueClicked] = useState(false);
-
-  if(continueClicked)
-    return <LgHomepage/>
-  return (
+return (
     <div className="min-h-screen flex items-center justify-center w-full absolute top-0 bg-gray-100">
       <div className="w-full max-w-lg bg-white rounded-xl shadow-lg p-6">
         <h2 className="text-2xl font-semibold mb-6">Welcome to Airbnb</h2>
@@ -42,8 +40,9 @@ const AirBnbHome = () => {
         </p>
 
         <button
-        onClick={() => setContinueClicked(true)}
-          className="w-full bg-pink-500 text-white py-2 rounded-md mb-4 hover:bg-pink-600">
+          onClick={onContinue} // Call the onContinue prop when this button is clicked
+          className="w-full bg-pink-500 text-white py-2 rounded-md mb-4 hover:bg-pink-600"
+        >
           Continue
         </button>
 
@@ -66,7 +65,7 @@ const AirBnbHome = () => {
           </button>
 
           <button className="w-full border relative border-gray-300 rounded-md py-2 text-sm font-medium flex items-center justify-center gap-2 hover:bg-gray-100">
-            <img src={Email} alt="Email" className="w-5 h-5  absolute left-4" />
+            <img src={Email} alt="Email" className="w-5 h-5 absolute left-4" />
             Continue with email
           </button>
         </div>

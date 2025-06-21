@@ -6,44 +6,55 @@ import Footer from "../Pages/Footer";
 import Heading from "./Heading";
 import Lists from "./Lists";
 import Dropdown from "../Pages/Dropdown";
-import AirBnbHome from "../Pages/AirBnbHome"; 
+import AirBnbHome from "../Pages/AirBnbHome";
 import MapToggle from "../Pages/MapToggle";
 
-function LandingPages() {
+// Define the interface for the props that LandingPages will accept
+interface LandingPagesProps {
+  onContinue: () => void; // This prop is expected from its parent (e.g., MainView)
+}
+
+// Modify the LandingPages component to accept props
+function LandingPages({ onContinue }: LandingPagesProps) {
   const [loggedOut, setLoggedOut] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-      const timer = setTimeout(() =>{
-        if (!navigator.onLine){
-          setError('Network error : please check your internet connection.');
-          setLoading(false);
-        } else{
-          setError(null)
-          setLoading(false);
-        }
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // Check if navigator.onLine is available before using it
+      if (typeof navigator !== 'undefined' && !navigator.onLine) {
+        setError('Network error: please check your internet connection.');
+        setLoading(false);
+      } else {
+        setError(null);
+        setLoading(false);
+      }
+    }, 2000);
 
-      },2000);
+    return () => clearTimeout(timer);
+  }, []);
 
-      return () => clearTimeout(timer);
-    },[]);
+  if (loading) {
+    return (
+      <div className="min-h-screen flex justify-center items-center">
+        <div>Loading...</div>
+      </div>
+    );
+  }
 
-    if(loading){
-      return (
-        <div className="min-h-screen flex justify-center items-center">
-          <div>Loading...</div>
-        </div>
-      );
-    }
+  if (error) {
+    return (
+      <div className=" bg-red-200 min-h-screen flex justify-center items-center text-red-500 text-lg">{error}</div>
+    );
+  }
 
-    if (error) {
-      return (
-        <div className=" bg-red-200 min-h-screen flex justify-center items-center text-red-500 text-lg">{error}</div>
-      );
-    }
   if (loggedOut) {
-    return <AirBnbHome/>; 
+    // When loggedOut is true, render AirBnbHome.
+    // The onContinue prop of LandingPages should be passed down to AirBnbHome,
+    // so AirBnbHome can signal back to LandingPages's parent (MainView)
+    // when a "continue" action happens (e.g., successful login).
+    return <AirBnbHome onContinue={onContinue} />;
   }
 
   return (
@@ -67,6 +78,7 @@ function LandingPages() {
             <div className="flex items-center gap-4">
               <p className="text-l font-medium">Airbnb your home</p>
               <img src={internet} alt="" className="w-10 h-10" />
+              {/* Dropdown should trigger a login action, setting loggedOut to true to show AirBnbHome */}
               <Dropdown onLogIn={() => setLoggedOut(true)} />
             </div>
           </div>
@@ -75,7 +87,7 @@ function LandingPages() {
       <Heading />
       <Lists />
       <Footer />
-<MapToggle/>
+      <MapToggle />
     </div>
   );
 }
