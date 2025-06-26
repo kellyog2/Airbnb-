@@ -4,7 +4,7 @@ import LgHomepage from "./Pages/LgHomepage";
 
 function App() {
 const [showMainContent, setShowMainContent] = useState(false);
-const handleContinueToMainContent = () => {
+  const handleContinueToMainContent = () => {
     setShowMainContent(true);
   };
 

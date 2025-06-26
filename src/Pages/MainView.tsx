@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AirBnbHome from "./AirBnbHome";
-import LandingPages from "../component/LandingPages"; // Make sure this path is correct
+import LandingPages from "../component/LandingPages";
 
 function MainView() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

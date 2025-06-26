@@ -2,6 +2,8 @@ import Google from "../assets/Google.png";
 import Apple from "../assets/Apple.png";
 import Email from "../assets/mail-01.png";
 import Facebook from "../assets/Vector.png";
+
+
 interface AirBnbHomeProps {
   onContinue: () => void; 
 }

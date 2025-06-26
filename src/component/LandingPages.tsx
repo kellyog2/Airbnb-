@@ -9,12 +9,11 @@ import Dropdown from "../Pages/Dropdown";
 import AirBnbHome from "../Pages/AirBnbHome";
 import MapToggle from "../Pages/MapToggle";
 
-// Define the interface for the props that LandingPages will accept
+
 interface LandingPagesProps {
-  onContinue: () => void; // This prop is expected from its parent (e.g., MainView)
+  onContinue: () => void;
 }
 
-// Modify the LandingPages component to accept props
 function LandingPages({ onContinue }: LandingPagesProps) {
   const [loggedOut, setLoggedOut] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -22,7 +21,6 @@ function LandingPages({ onContinue }: LandingPagesProps) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      // Check if navigator.onLine is available before using it
       if (typeof navigator !== 'undefined' && !navigator.onLine) {
         setError('Network error: please check your internet connection.');
         setLoading(false);
@@ -50,10 +48,6 @@ function LandingPages({ onContinue }: LandingPagesProps) {
   }
 
   if (loggedOut) {
-    // When loggedOut is true, render AirBnbHome.
-    // The onContinue prop of LandingPages should be passed down to AirBnbHome,
-    // so AirBnbHome can signal back to LandingPages's parent (MainView)
-    // when a "continue" action happens (e.g., successful login).
     return <AirBnbHome onContinue={onContinue} />;
   }
 
